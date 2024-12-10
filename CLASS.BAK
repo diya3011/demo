@@ -1,0 +1,32 @@
+#include<conio.h>
+#include<iostream.h>
+
+class company
+{
+ public:
+ char name;
+ int age,salary;
+ void getdata(char x, int y, int z);
+ void display();
+};
+
+void company:: getdata(char x,int y,int z){
+      name =x;
+      age=y;
+      salary = z;
+}
+
+void company:: display(){
+ cout<<name<<endl;
+ cout<<age<<endl;
+ cout<<salary<<endl;
+}
+
+void main()
+{
+ company c1;
+ clrscr();
+ c1.getdata('k',18,2500);
+ c1.display();
+ getch();
+}
